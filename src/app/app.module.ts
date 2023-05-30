@@ -10,6 +10,7 @@ import { HomeManagerComponent } from './home-manager/home-manager.component';
 import { HomeCxoComponent } from './home-cxo/home-cxo.component';
 import { HeaderComponent } from './header/header.component';
 import { TicketManagementComponent } from './ticket-management/ticket-management.component';
+import { Widget1Component } from './home-cxo/widgets/widget1/widget1.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TicketManagementComponent } from './ticket-management/ticket-management
     HomeManagerComponent,
     HomeCxoComponent,
     HeaderComponent,
-    TicketManagementComponent
+    TicketManagementComponent,
+    Widget1Component
   ],
   imports: [
     BrowserModule,
