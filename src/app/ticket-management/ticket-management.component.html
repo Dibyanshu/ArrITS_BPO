@@ -1,8 +1,101 @@
 <div class="row">
     <div class="col-md-12">
         <div class="row">
-            <div class="col-md-3">
-                
+            <div class="col-md-3 mb-3" *ngFor="let ticket of ticketCountArr;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                <span class="iconBg d-flex align-items-center justify-content-center">
+                                    <i class="fa-solid fa-ticket"></i>
+                                </span>
+                            </div>
+                            <div class="col-md-9">
+                                <h6>{{ticket.dayCount}} Tickets</h6>
+                                <p class="mb-0" [style]="'new' == ticket.status ? 'color: #dc3545' : 'color: #23bd5a'">
+                                    <span class="h4 me-1 fw-bold"
+                                        style="color: initial">{{ticket.ticketCount}}</span>{{ticket.status |
+                                    uppercase}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        Ticket Change Status
+                        <i class="fa-solid fa-clipboard-check icon-primary"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-group" style="width: 100%">
+                                    <li class="list-group-item d-flex align-items-center justify-content-between"
+                                        *ngFor="let status of ticketChangeStatus;">
+                                        <span>
+                                            <h6 class="mb-0">#{{status.ticketNumber}}</h6>
+                                            <span style="color: #a9a8a8; font-size: 12px">Created On:
+                                                {{status.ticketDate}}</span>
+                                        </span>
+                                        <button class="btn" style="color: #fff"
+                                            [style.background-color]="status.btnColor">{{status.type}}</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        Create Ticket
+                        <i class="fa-solid fa-file-circle-plus icon-primary"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa fa-user text-primary"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa-solid fa-envelope text-primary"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Subject" aria-label="Subject"
+                                        aria-describedby="basic-addon1" required>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa-solid fa-square-up-right text-primary"></i>
+                                    </span>
+                                    <select class="form-select" id="inputGroupSelect01" placeholder="Set Priority" required>
+                                        <option value="high">High</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="low">Low</option>
+                                      </select>
+                                </div>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fa-solid fa-comment text-primary"></i>
+                                    </span>
+                                    <textarea class="form-control" rows="5" placeholder="Description" required></textarea>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-primary">Create</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
