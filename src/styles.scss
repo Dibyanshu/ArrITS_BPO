@@ -118,7 +118,7 @@ header.shadow {
   position: absolute;
   top: -5px;
   left: 75%;
-  background: #e237e7;
+  background: #fb4e0b;
   border-radius: 10px 10px 10px 0px;
   height: 30px;
   min-width: 30px;
@@ -170,11 +170,11 @@ header.shadow {
 }
 
 .icon-primary {
-  color: #e237e7;
+  color: #fb4e0b;
 }
 
 .card-sub-header {
-  color: #e237e7;
+  color: #fb4e0b;
   font-weight: 400;
   font-size: 14px;
 }
@@ -182,11 +182,18 @@ header.shadow {
 .non-card-heading::after {
   content: '';
   border: 1px solid #cfcfcf;
-  width: 45%;
+  width: 80%;
   display: block;
   position: absolute;
-  left: 55%;
+  left: 20%;
   top: 50%;
+  z-index: 1;
+}
+
+.non-card-heading span{
+  background: #f4f7fe;
+    z-index: 2;
+    position: relative;
 }
 
 .btn-icon {
@@ -576,7 +583,7 @@ header.shadow {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  color: #e237e7;
+  color: #fb4e0b;
   text-align: center;
   border-radius: 50%;
   line-height: 100%;
@@ -720,4 +727,8 @@ button.close{
 
 button.close i{
   font-size: 22px;
+}
+
+i.text-primary{
+  color: #fb4e0b!important;
 }

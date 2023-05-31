@@ -11,6 +11,7 @@ import { HomeCxoComponent } from './home-cxo/home-cxo.component';
 import { HeaderComponent } from './header/header.component';
 import { TicketManagementComponent } from './ticket-management/ticket-management.component';
 import { Widget1Component } from './home-cxo/widgets/widget1/widget1.component';
+import { SocialCornerComponent } from './social-corner/social-corner.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Widget1Component } from './home-cxo/widgets/widget1/widget1.component';
     HomeCxoComponent,
     HeaderComponent,
     TicketManagementComponent,
-    Widget1Component
+    Widget1Component,
+    SocialCornerComponent
   ],
   imports: [
     BrowserModule,
