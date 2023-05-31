@@ -5,13 +5,15 @@ import { HomeUserComponent } from './home-user/home-user.component';
 import { HomeManagerComponent } from './home-manager/home-manager.component';
 import { HomeCxoComponent } from './home-cxo/home-cxo.component';
 import { TicketManagementComponent } from './ticket-management/ticket-management.component';
+import { LeaveManagementComponent } from './leave-management/leave-management.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home-user', pathMatch: 'full' },
   {path: 'home-user', component: HomeUserComponent },
   { path: 'home-manager', component: HomeManagerComponent },
   { path: 'home-cxo', component: HomeCxoComponent },
-  { path: 'ticket-management', component: TicketManagementComponent }
+  { path: 'ticket-management', component: TicketManagementComponent },
+  { path: 'leave-management', component: LeaveManagementComponent }
 ];
 
 @NgModule({

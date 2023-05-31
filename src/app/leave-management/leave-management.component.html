@@ -1,0 +1,126 @@
+<div class="row">
+    <div class="col-md-9">
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h6 class="non-card-heading position-relative"><i
+                        class="fa-solid fa-person-walking-arrow-right text-primary"></i>
+                    <span class="ms-1 px-2">Annual Leave</span>
+                </h6>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2 progressBar progressTakenColor">
+                                <h6 class="mb-1">2 Days</h6>
+                                <label>Taken</label>
+                            </div>
+                            <div class="col-md-5 progressBar progressBookedColor">
+                                <h6 class="mb-1">9.5 Days</h6>
+                                <label>Booked</label>
+                            </div>
+                            <div class="col-md-5 progressBar progressRemainingColor">
+                                <h6 class="mb-1">8.5 Days</h6>
+                                <label>Remaining</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h6 class="non-card-heading position-relative"><i class="fa-solid fa-thumbs-up text-primary"></i>
+                    <span class="ms-1 px-2">Approvals</span>
+                </h6>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-wrap">
+                                    <table class="table approvalTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Employee Name</th>
+                                                <th>Leave Type</th>
+                                                <th>Starting</th>
+                                                <th>Duration</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let approved of approvalObj;">
+                                                <td class="d-flex align-items-center">
+                                                    <i class="fa-solid fa-circle-user me-2"></i>
+                                                    <label>{{approved.name}}</label>
+                                                </td>
+                                                <td>{{approved.type}} Leave</td>
+                                                <td>{{approved.startDate}}</td>
+                                                <td>{{approved.duration}} days</td>
+                                                <td class="d-flex align-items-center">
+                                                    <button class="btn btn-danger me-2">Decline</button>
+                                                    <button class="btn btn-primary">Approve</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <h6 class="non-card-heading position-relative"><i class="fa-solid fa-umbrella-beach text-primary"></i>
+                    <span class="ms-1 px-2">My Leaves</span>
+                </h6>
+            </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-wrap">
+                                    <table class="table approvalTable">
+                                        <thead>
+                                            <tr>
+                                                <th>Leave Type</th>
+                                                <th>From</th>
+                                                <th>Duration</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr *ngFor="let leave of myLeaves;">
+                                                <td>{{leave.type}} Leave</td>
+                                                <td>{{leave.startDate}}</td>
+                                                <td>{{leave.duration}} days</td>
+                                                <td>{{leave.status}}</td>
+                                                <td><button class="btn btn-danger">Cancel</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class="non-card-heading position-relative">
+                    <i class="fa-solid fa-users-line text-primary"></i>
+                    <span class="ms-1 px-2">7 Days Leave Plan</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+</div>
