@@ -13,6 +13,8 @@ import { TicketManagementComponent } from './ticket-management/ticket-management
 import { Widget1Component } from './home-cxo/widgets/widget1/widget1.component';
 import { SocialCornerComponent } from './social-corner/social-corner.component';
 import { LeaveManagementComponent } from './leave-management/leave-management.component';
+import { BannerSectionComponent } from './banner-section/banner-section.component';
+import { FormTemplatesComponent } from './form-templates/form-templates.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LeaveManagementComponent } from './leave-management/leave-management.co
     TicketManagementComponent,
     Widget1Component,
     SocialCornerComponent,
-    LeaveManagementComponent
+    LeaveManagementComponent,
+    BannerSectionComponent,
+    FormTemplatesComponent
   ],
   imports: [
     BrowserModule,

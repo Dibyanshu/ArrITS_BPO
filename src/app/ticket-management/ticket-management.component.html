@@ -1,4 +1,5 @@
-<div class="row">
+<app-banner-section></app-banner-section>
+<div class="row mb-4">
     <div class="col-md-12">
         <div class="row">
             <div class="col-md-3 mb-3" *ngFor="let ticket of ticketCountArr;">
@@ -11,8 +12,8 @@
                                 </span>
                             </div>
                             <div class="col-md-9">
-                                <h6>{{ticket.dayCount}} Tickets</h6>
-                                <p class="mb-0" [style]="'new' == ticket.status ? 'color: #dc3545' : 'color: #23bd5a'">
+                                <h6>{{ticket.dayCount}}</h6>
+                                <p class="mb-0" [style]="'incomplete' == ticket.status ? 'color: #dc3545' : 'color: #23bd5a'">
                                     <span class="h4 me-1 fw-bold"
                                         style="color: initial">{{ticket.ticketCount}}</span>{{ticket.status |
                                     uppercase}}

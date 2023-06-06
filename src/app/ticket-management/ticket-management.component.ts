@@ -7,14 +7,14 @@ import { Component } from '@angular/core';
 })
 export class TicketManagementComponent {
   ticketCountArr: any[] = [
-    {dayCount: "Today's", ticketCount: 2, status: 'new'},
-    {dayCount: "Last 15 Day's", ticketCount: 4, status: 'new'},
-    {dayCount: "Last 30 Day's", ticketCount: 8, status: 'new'},
-    {dayCount: "Last 90 Day's", ticketCount: 20, status: 'new'},
-    {dayCount: "Today's", ticketCount: 0, status: 'complete'},
-    {dayCount: "Last 15 Day's", ticketCount: 2, status: 'complete'},
-    {dayCount: "Last 30 Day's", ticketCount: 4, status: 'complete'},
-    {dayCount: "Last 90 Day's", ticketCount: 16, status: 'complete'}
+    {dayCount: "Leave Requests", ticketCount: 2, status: 'new'},
+    {dayCount: "Travel Requests", ticketCount: 4, status: 'new'},
+    {dayCount: "Expense Requests", ticketCount: 8, status: 'new'},
+    {dayCount: "Others", ticketCount: 20, status: 'new'},
+    {dayCount: "Pending Training", ticketCount: 5, status: 'incomplete'},
+    {dayCount: "Total Mandatory Trainings", ticketCount: "2/5", status: 'complete'},
+    {dayCount: "Top 3 Trainings", ticketCount: 1, status: 'complete'},
+    {dayCount: "Current Training", ticketCount: 2, status: 'complete'}
   ];
   ticketChangeStatus: any[] = [
     {ticketNumber: 35467, ticketDate: '12/04/2023', type: 'New Ticket', btnColor: '#dc3545'},
