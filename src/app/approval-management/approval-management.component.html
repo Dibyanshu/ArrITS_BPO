@@ -24,7 +24,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr *ngFor="let approved of approvalObj;">
+                                            <tr *ngFor="let approved of leaveApprovalObj;">
                                                 <td class="d-flex align-items-center">
                                                     <i class="fa-solid fa-circle-user me-2"></i>
                                                     <label>{{approved.name}}</label>
@@ -62,21 +62,21 @@
                                         <thead>
                                             <tr>
                                                 <th>Employee Name</th>
-                                                <th>Leave Type</th>
                                                 <th>Starting</th>
                                                 <th>Duration</th>
+                                                <th>Project Name</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr *ngFor="let approved of approvalObj;">
+                                            <tr *ngFor="let approved of travelApprovalObj;">
                                                 <td class="d-flex align-items-center">
                                                     <i class="fa-solid fa-circle-user me-2"></i>
                                                     <label>{{approved.name}}</label>
                                                 </td>
-                                                <td>{{approved.type}} Leave</td>
                                                 <td>{{approved.startDate}}</td>
                                                 <td>{{approved.duration}} days</td>
+                                                <td>{{approved.projectName}}</td>
                                                 <td class="d-flex align-items-center">
                                                     <button class="btn btn-danger me-2">Decline</button>
                                                     <button class="btn btn-primary">Approve</button>
@@ -107,21 +107,23 @@
                                         <thead>
                                             <tr>
                                                 <th>Employee Name</th>
-                                                <th>Leave Type</th>
-                                                <th>Starting</th>
-                                                <th>Duration</th>
+                                                <th>Date</th>
+                                                <th>Purpose</th>
+                                                <th>Amount</th>
+                                                <th>Project Name</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr *ngFor="let approved of approvalObj;">
+                                            <tr *ngFor="let approved of expenseApprovalObj;">
                                                 <td class="d-flex align-items-center">
                                                     <i class="fa-solid fa-circle-user me-2"></i>
                                                     <label>{{approved.name}}</label>
                                                 </td>
-                                                <td>{{approved.type}} Leave</td>
-                                                <td>{{approved.startDate}}</td>
-                                                <td>{{approved.duration}} days</td>
+                                                <td>{{approved.expenseDate}}</td>
+                                                <td>{{approved.expensePurpose}}</td>
+                                                <td>{{approved.amount}} {{approved.amountType}}</td>
+                                                <td>{{approved.projectName}}</td>
                                                 <td class="d-flex align-items-center">
                                                     <button class="btn btn-danger me-2">Decline</button>
                                                     <button class="btn btn-primary">Approve</button>
