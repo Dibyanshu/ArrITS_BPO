@@ -15,6 +15,7 @@ import { SocialCornerComponent } from './social-corner/social-corner.component';
 import { LeaveManagementComponent } from './leave-management/leave-management.component';
 import { BannerSectionComponent } from './banner-section/banner-section.component';
 import { FormTemplatesComponent } from './form-templates/form-templates.component';
+import { ApprovalManagementComponent } from './approval-management/approval-management.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormTemplatesComponent } from './form-templates/form-templates.componen
     SocialCornerComponent,
     LeaveManagementComponent,
     BannerSectionComponent,
-    FormTemplatesComponent
+    FormTemplatesComponent,
+    ApprovalManagementComponent
   ],
   imports: [
     BrowserModule,

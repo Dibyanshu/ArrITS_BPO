@@ -6,14 +6,16 @@ import { HomeManagerComponent } from './home-manager/home-manager.component';
 import { HomeCxoComponent } from './home-cxo/home-cxo.component';
 import { TicketManagementComponent } from './ticket-management/ticket-management.component';
 import { LeaveManagementComponent } from './leave-management/leave-management.component';
+import { ApprovalManagementComponent } from './approval-management/approval-management.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home-user', pathMatch: 'full' },
-  {path: 'home-user', component: HomeUserComponent },
-  { path: 'home-manager', component: HomeManagerComponent },
-  { path: 'home-cxo', component: HomeCxoComponent },
+  { path: 'home-user', component: HomeUserComponent },
+  { path: 'manager-dashboard', component: HomeManagerComponent },
+  { path: 'cxo-dashboard', component: HomeCxoComponent },
   { path: 'ticket-management', component: TicketManagementComponent },
-  { path: 'leave-management', component: LeaveManagementComponent }
+  { path: 'leave-management', component: LeaveManagementComponent },
+  { path: 'approval-management', component: ApprovalManagementComponent }
 ];
 
 @NgModule({
